@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAMESET</title>
+    <style>
+        /* Style for the entire frameset */
+        frameset {
+            border: none;
+        }
+
+        /* Style for the individual frames */
+        frame {
+            border: 2px solid #333; /* Add a border to frames */
+            border-radius: 8px; /* Optional: Add rounded corners */
+        }
+
+        /* Specific style for the first row frame */
+        frame[src="/html2/hel.html"] {
+            background-color: #f0f0f0; /* Set background color */
+        }
+
+        /* Specific style for the frames in the second frameset */
+        frameset[cols="40%,60%"] frame[src="/html2/R.html"] {
+            background-color: #dfe6e9; /* Set background color for R frame */
+        }
+
+        frameset[cols="40%,60%"] frame[src="/html2/S.html"] {
+            background-color: #ffeaa7; /* Set background color for S frame */
+        }
+    </style>
+
+</head>
+
+   <FRAMESET ROWS="40%,60%">
+    <frame src="/html2/hel.html"></frame>
+    <frameset cols="40%,60%">
+    <frame src="/html2/R.html"></frame>
+    <frame src="/html2/S.html"></frame>
+    </frameset>
+   </FRAMESET> 
+   <body>
+</body>
+</html>
